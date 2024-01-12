@@ -1,5 +1,9 @@
 package com.teamd.teamdbackendapi.repository;
 
-public interface UsersRepository {
+import org.springframework.data.jpa.repository.JpaRepository;
+
+import com.teamd.teamdbackendapi.model.Users;
+
+public interface UsersRepository extends JpaRepository<Users, Long> {
 
 }
